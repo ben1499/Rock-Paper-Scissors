@@ -51,6 +51,7 @@ function playRound(playerSelection, computerSelection) {
     }
     else {
         result = "It is a tie !";
+        flag = 2;
     }
     return result;
 }
@@ -70,6 +71,8 @@ function game() {
            gameWin++; 
         else if(flag === 0)
             gameLose++;
+        else if(flag == 2)
+            i--;
     }
     if(gameWin > gameLose)
         console.log("Congrats! You win");
