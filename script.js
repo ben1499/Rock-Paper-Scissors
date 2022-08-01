@@ -19,7 +19,6 @@ function getComputerChoice() {
 
 //function that plays a single round of the game
 //two parameters playerSelection and computerSelection
-//compare both values if same then win else lose
 
 function playRound(playerSelection, computerSelection) {
     //playerSelection = /playerSelection/i;
@@ -55,7 +54,18 @@ function playRound(playerSelection, computerSelection) {
    
 }
 
-const playerSelection = 'rock';
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+
+
+
+function game() {
+    for(let i = 0; i < 5; i++)
+    {   
+        let playerSelection = prompt("Enter a choice");
+        let computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+
+game();
 
