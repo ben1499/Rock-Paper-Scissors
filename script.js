@@ -64,6 +64,7 @@ function game() {
     for(let i = 0; i < 5; i++)
     {   
         let playerSelection = prompt("Enter a choice");
+        playerSelection = playerSelection.toLowerCase();
         let computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
         if(flag === 1)
