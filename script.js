@@ -58,7 +58,6 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-
 function game() {
     let gameWin = 0;
     let gameLose = 0;
